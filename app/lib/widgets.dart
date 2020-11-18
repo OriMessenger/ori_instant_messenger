@@ -31,7 +31,12 @@ Widget profile(BuildContext context) {
             onTap: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => InfoPage()));
-            })
+            }),
+        new ListTile(
+            title: new Text("Выйти"),
+            onTap: () {
+              Navigator.popUntil(context, ModalRoute.withName('/'));
+            }),
       ],
     ),
   );
