@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:app/widgets.dart';
 
 class InfoPage extends StatefulWidget {
   @override
@@ -10,7 +9,6 @@ class _InfoPageState extends State<InfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MainAppBar(context),
       body: Center(
         child: Column(children: <Widget>[
           Text(
