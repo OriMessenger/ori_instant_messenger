@@ -1,4 +1,5 @@
 import 'package:app/models/user.dart';
+import 'package:app/widgets/chatBodyWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:app/api/firebaseApi.dart';
 
@@ -26,7 +27,7 @@ class ChatsPage extends StatelessWidget {
                       return Column(
                         children: [
                           // ChatHeaderWidget(users: users), ну или чето туда пихнуть, типо поиска
-                          // ChatBodyWidget(users: users)
+                          ChatBodyWidget(users: users),
                         ],
                       );
                   }
