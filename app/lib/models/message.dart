@@ -1,62 +1,60 @@
-import 'userModel.dart';
+import 'package:app/models/user.dart';
 
 class Message {
   final User sender;
   final String
       time; // Would usually be type DateTime or Firebase Timestamp in production apps
   final String text;
-  bool unread;
 
   Message({
     this.sender,
     this.time,
     this.text,
-    this.unread,
   });
 }
 
 // YOU - current user
 final User currentUser = User(
   id: 0,
-  name: 'Current User',
-  imageUrl: 'assets/id0.jpg',
+  name: 'Катя',
+  imageUrl: 'assets/pelevin.jpg',
 );
 
 // USERS
 final User id1 = User(
   id: 1,
   name: 'Петя',
-  imageUrl: 'assets/id0.jpg',
+  imageUrl: 'assets/venya.jpg',
 );
 final User id2 = User(
   id: 2,
-  name: 'Коля',
-  imageUrl: '',
+  name: 'Юлия',
+  imageUrl: 'assets/julia.jpg',
 );
 final User id3 = User(
   id: 3,
   name: 'Андрей',
-  imageUrl: '',
+  imageUrl: 'assets/Ya.jpg',
 );
 final User id4 = User(
   id: 4,
   name: 'Лера',
-  imageUrl: '',
+  imageUrl: 'assets/lera.jpg',
 );
 final User id5 = User(
   id: 5,
   name: 'Катя',
-  imageUrl: '',
+  imageUrl: 'assets/katya.jpg',
 );
 final User id6 = User(
   id: 6,
-  name: 'Вадим Сергееич',
-  imageUrl: '',
+  name: 'Кристина',
+  imageUrl: 'assets/kris.jpg',
 );
 final User id7 = User(
   id: 7,
-  name: 'Steven',
-  imageUrl: '',
+  name: 'Стив',
+  imageUrl: 'assets/Semen.jpg',
 );
 
 // EXAMPLE CHATS ON HOME SCREEN
@@ -64,44 +62,37 @@ List<Message> chats = [
   Message(
     sender: id1,
     time: '5:30 PM',
-    text: 'Привет ДРУГ, как дела!?!?!?!?!?',
-    unread: true,
+    text: 'Ух, устал сегодня',
   ),
   Message(
     sender: id2,
     time: '4:30 PM',
-    text: 'Замечания в файле',
-    unread: true,
+    text: 'Жду завтра в 13:00',
   ),
   Message(
     sender: id3,
     time: '3:30 PM',
-    text: 'Курлык',
-    unread: false,
+    text: 'Большое спасибо',
   ),
   Message(
     sender: id4,
     time: '2:30 PM',
-    text: 'Ну как там с деньгами',
-    unread: true,
+    text: 'Блеск. Жду тебя завтра)',
   ),
   Message(
     sender: id5,
     time: '1:30 PM',
-    text: 'ы',
-    unread: false,
+    text: 'Ура, я в интернете',
   ),
   Message(
     sender: id6,
     time: '12:30 PM',
-    text: '))))))))))))))))))))))))))))))))))))))))))))',
-    unread: false,
+    text: 'Мда',
   ),
   Message(
     sender: id7,
     time: '11:30 AM',
-    text: 'Пефка бы',
-    unread: false,
+    text: 'Я сообщение',
   ),
 ];
 
@@ -110,37 +101,31 @@ List<Message> messages = [
   Message(
     sender: id1,
     time: '5:30 PM',
-    text: 'Контуженый',
-    unread: true,
+    text: 'Блеск. Жду тебя завтра)',
   ),
   Message(
     sender: currentUser,
     time: '4:30 PM',
-    text: 'Что да',
-    unread: true,
+    text: 'А у тебя как?',
   ),
   Message(
-    sender: id1,
+    sender: currentUser,
     time: '3:45 PM',
-    text: 'Да',
-    unread: true,
+    text: 'Просто отлично, жду следующего занатия))',
   ),
   Message(
     sender: id1,
     time: '3:15 PM',
-    text: 'НУ ЛАДНО. Когда пиво пить',
-    unread: true,
+    text: 'Как прошла тренеровка?',
   ),
   Message(
     sender: currentUser,
     time: '2:30 PM',
-    text: 'НОРМАЛЬНОфыущоцйщулоцщлутаь, а че',
-    unread: true,
+    text: 'Привет',
   ),
   Message(
     sender: id1,
     time: '2:00 PM',
-    text: 'ДРУГ как дела?',
-    unread: true,
+    text: 'Привет!',
   ),
 ];
