@@ -51,9 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 30, height: 30, fit: BoxFit.contain),
                 label: "Рейтинг"),
             BottomNavigationBarItem(
-                icon: Image.asset('assets/shopping-cart.png',
+                icon: Image.asset('assets/messenger.png',
                     width: 30, height: 30, fit: BoxFit.contain),
-                label: "Магазин"),
+                label: "Мессенджер"),
             BottomNavigationBarItem(
                 icon: Image.asset('assets/placeholder.png',
                     width: 30, height: 30, fit: BoxFit.contain),

@@ -27,7 +27,7 @@ class _ChatScreenState extends State<ChatScreen> {
       padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),
       width: MediaQuery.of(context).size.width * 0.5,
       decoration: BoxDecoration(
-        color: isMe ? Color(0xFF96D4EF) : Color(0xFFEBEBEB),
+        color: isMe ? Color(0xFFFFC014) : Color(0xFFEBEBEB),
         borderRadius: isMe
             ? BorderRadius.only(
                 topLeft: Radius.circular(15.0),
@@ -109,9 +109,9 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF96D4EF),
+      backgroundColor: Color(0xFFFFC014),
       appBar: AppBar(
-        backgroundColor: Color(0xFF96D4EF),
+        backgroundColor: Color(0xFFFFC014),
         title: Text(
           widget.user.name,
           style: TextStyle(
